@@ -14,5 +14,7 @@ for a in A:
         
     Q = Q.append(a.normalization())
     
+print(Q)
+    
 for a, b in combinations(Q, 2):
     print(a.inner_product(b))
