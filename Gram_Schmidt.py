@@ -14,9 +14,13 @@ for a in A:
         
     Q = Q.append(a.normalization())
     
+print()
+print("A")
+print(A.transpose())
+print()
+
 print("Q")
 print(Q.transpose())
-print()
 
 print("|Q|")
 for q in Q:

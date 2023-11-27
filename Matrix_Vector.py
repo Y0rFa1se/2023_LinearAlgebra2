@@ -258,6 +258,10 @@ class Matrix:
             
         return Matrix(ret)
     
+    def random_square(self, n):
+        ret = [[random.random() for i in range(n)] for i in range(n)]
+        return Matrix(ret)
+    
 class Vector:
     def __init__(self, array_1d):
         self.vec = array_1d
@@ -337,3 +341,10 @@ class Vector:
             vec[i] /= ssum
             
         return vec
+    
+    def absolute(self):
+        absol = 0
+        for item in self.vec:
+            absol += item ** 2
+            
+        return sqrt(absol)
