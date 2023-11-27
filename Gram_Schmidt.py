@@ -1,4 +1,4 @@
-from itertools import *
+from itertools import combinations
 from Matrix_Vector import *
 
 n = int(input())
