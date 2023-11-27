@@ -2,9 +2,9 @@ from itertools import combinations
 from Matrix_Vector import *
 
 n = int(input())
-A = Matrix([]).random_square(n)
+A = Matrix.random_square(n)
 while not (A.is_invertible()):
-    A = Matrix([]).random_square(n)
+    A = Matrix.random_square(n)
 
 Q = Matrix([])
 

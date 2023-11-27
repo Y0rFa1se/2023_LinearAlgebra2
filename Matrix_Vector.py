@@ -258,7 +258,8 @@ class Matrix:
             
         return Matrix(ret)
     
-    def random_square(self, n):
+    @staticmethod
+    def random_square(n):
         ret = [[random.random() for i in range(n)] for i in range(n)]
         return Matrix(ret)
     
