@@ -34,7 +34,7 @@ print()
 
 A_selected = A.random_select(3)
 print("proof")
-for a in A:
+for a in A_selected:
     print("a")
     print(a)
     coef = Vector([])
