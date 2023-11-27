@@ -1,11 +1,11 @@
-from itertools import combinations
+from itertools import *
 from Matrix_Vector import *
 
-m, n = map(int, input("m x n: ").split())
-A = Matrix([])
-for i in range(m):
-    A = A.append(Vector(list(map(int, input(f"a_{i + 1}: ").split()))))
-    
+n = int(input())
+A = Matrix([]).random_square(n)
+while not (A.is_invertible()):
+    A = Matrix([]).random_square(n)
+
 Q = Matrix([])
 
 for a in A:
@@ -14,7 +14,16 @@ for a in A:
         
     Q = Q.append(a.normalization())
     
-print(Q)
+print("Q")
+print(Q.transpose())
+print()
+
+print("|Q|")
+for q in Q:
+    print(q.absolute())
+print()
     
+print("orthogonal")
 for a, b in combinations(Q, 2):
     print(a.inner_product(b))
+print()
