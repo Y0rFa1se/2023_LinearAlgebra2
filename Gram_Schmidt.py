@@ -32,10 +32,10 @@ for a, b in combinations(Q, 2):
     print(a.inner_product(b))
 print()
 
-A_selected = A.random_select(3)
 print("proof")
-for a in A_selected:
+for i in range(3):
     print("a")
+    a = Vector.random_vector(n)
     print(a)
     coef = Vector([])
     for q in Q:

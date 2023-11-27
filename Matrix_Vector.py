@@ -349,3 +349,7 @@ class Vector:
             absol += item ** 2
             
         return sqrt(absol)
+    
+    @staticmethod
+    def random_vector(n):
+        return Vector([random.random() for i in range(n)])
