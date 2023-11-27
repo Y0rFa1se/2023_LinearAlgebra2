@@ -31,3 +31,23 @@ print("orthogonal")
 for a, b in combinations(Q, 2):
     print(a.inner_product(b))
 print()
+
+A_selected = A.random_select(3)
+print("proof")
+for a in A:
+    print("a")
+    print(a)
+    coef = Vector([])
+    for q in Q:
+        coef = coef.append(a.inner_product(q))
+        
+    print("coefficients")
+    print(coef)
+    
+    v = Vector([0 for i in range(n)])
+    for i in range(n):
+        v += Q[i] * coef[i]
+        
+    print("v")
+    print(v)
+    print()
