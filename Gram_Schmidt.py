@@ -16,11 +16,11 @@ for a in A:
     
 print()
 print("A")
-print(A.transpose())
+print(A)
 print()
 
 print("Q")
-print(Q.transpose())
+print(Q)
 
 print("|Q|")
 for q in Q:
